@@ -1,0 +1,39 @@
+:root {
+  --purple: #6200EE;
+  --teal: #03DAC5;
+}
+
+body {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+.side { 
+  height: 100vh;
+  width: 100%;
+
+  display: grid;
+  place-items: center;
+
+  overflow: hidden;
+  position: absolute;
+}
+
+.side .title {
+  color: white;
+  font-family: "Rubik" sans-serif;
+  font-size: 8vh;
+  margin: 0px 15vw;
+  width: 70vw;
+}
+
+#left-side {
+  background-color: var(--purple);
+  z-index: 2;
+}
+
+#right-side {
+  background-color: var(--teal);
+}

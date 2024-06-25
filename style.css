@@ -1,0 +1,49 @@
+:root {
+    --red: #c20a0f;
+    --light-red: #f4bcbf;
+    --light-red-percent: 80%;
+}
+body {
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+.link {
+    display: block;
+    color: white;
+    font-size: clamp(2em, 8vh, 7em) ;
+    padding: clamp(0.25em, 1vh, 1em) clamp(1em, 4vh, 4em);
+    font-family: "Source Code Pro", monospace;
+    text-decoration: none;
+    position: relative;
+    border-top: 1px solid white;
+}
+
+.link:nth-child(4) {
+    border-bottom: 1px solid white;
+}
+
+.link:hover::before {
+    width: 100%;
+    transition: width 600ms ease;
+}
+
+.link::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        transparent,
+        var(--red) var(--light-red-percent),
+        var(--light-red)
+    );
+}
