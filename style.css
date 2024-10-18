@@ -13,10 +13,20 @@ body {
     margin: 0;
 }
 
+.container {
+    padding: 4rem 0;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.desc {
+    font-size: clamp(0.1em, 1vh, 1.5em);
+}
+
 .link {
     display: block;
     color: white;
-    font-size: clamp(2em, 8vh, 7em) ;
+    font-size: clamp(2em, 6vh, 3.5em);
     padding: clamp(0.25em, 1vh, 1em) clamp(1em, 4vh, 4em);
     font-family: "Source Code Pro", monospace;
     text-decoration: none;
